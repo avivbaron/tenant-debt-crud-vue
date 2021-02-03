@@ -72,17 +72,14 @@ export default {
     },
     // filter those who have debt
     async onDebt() {
-      // let newtasks = await api.gettasks(this.token);
       this.tasks = this.alltasks.filter(task => task.debt > 0);
     },
     // filter those who havn't debt
     async onNoDebt() {
-      // let newtasks = await api.gettasks(this.token);
       this.tasks = this.alltasks.filter(task => task.debt == '0');
     },
     // show all tenants
     async onShowAllTasks() {
-      // let alltasks = await api.gettasks(this.token);
       this.tasks = this.alltasks;
     },
     //search tenant by name
